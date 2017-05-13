@@ -1,0 +1,193 @@
+/* CSS Document */
+
+	
+#logopamer{
+	margin-top:2%;
+	margin-left:15%;
+
+	}
+	
+#opcioneslinkcampus{
+	position:absolute; 
+	top:15px; 
+	left:46%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:1;		
+		}
+#opcioneslinkfacebook{
+	position:absolute; 
+	top:15px; 
+	left:54%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:3;
+			
+		}
+#opcioneslinkyoutobe{
+	position:absolute; 
+	top:15px; 
+	left:62%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:4;		
+		}
+#opcioneslinkflickr{
+	position:absolute; 
+	top:15px; 
+	left:66%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:5;		
+		}
+#opcioneslinktelefono{
+	position:absolute; 
+	top:15px; 
+	left:71%; 
+	width:100px; 
+	height:29px; 
+	visibility:visible z-index:6;		
+	
+	}
+			
+.btnSiguiente{
+	margin-top:10px;	
+	background-color:#ecedef;
+    width:120px;
+    height:25px;   
+	font-family:Calibri;
+	font-size:14px;
+	color:#5b5a5d;
+	cursor:pointer;
+	
+	}			
+
+.textoceleste{
+	margin-top:3px;
+	/*margin-left:1px;*/
+   color:#76acdc;
+   font-weight:bold;
+   font-family:Calibri;
+   font-size:20px;
+   text-align:center;	
+	
+	}
+
+
+.subtitulo1{
+	/*margin-top:15px;
+	margin-left:1px;*/
+   color:#54a3d8;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:18px;
+   text-align:left;	
+	
+	}
+
+
+.datosGenerales{
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:15px;
+   text-align:left;		
+	}
+
+.datosGeneralesPeque{
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:15px;
+   text-align:left;		
+	}
+
+
+.botton_finalizar{
+	
+	margin-top:40px;
+	margin-right:10px;
+
+	
+	}
+
+.imgportada{
+	margin-right:10px;
+	left:!important;
+	margin-bottom:-1px;
+	}		
+
+.footer{
+   text-align:center;
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:13px;
+	}		
+
+.texto_enlaces_campus{
+   text-align:center;
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:10px;
+	position:absolute; 
+	top:15px; 
+	left:53.5%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:2;		
+	}		
+
+.texto_enlaces_campus{
+   text-align:left;
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:10px;
+	position:absolute; 
+	top:15px; 
+	left:49.5%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:2;		
+	}		
+
+.texto_enlaces_facebook{
+   text-align:left;
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:10px;
+	position:absolute; 
+	top:15px; 
+	left:57.5%; 
+	width:36px; 
+	height:29px; 
+	visibility:visible z-index:7;		
+	}		
+	
+.texto_comfirmacion{
+   text-align:justify;
+   color:#5b5a5d;
+   font-weight:normal;
+   font-family:Calibri;
+   font-size:20px;
+	left:53.5%;
+	margin-top:5%; 	
+	width:500px;
+	  
+	}		
+.espacio{
+	margin-top:2px;
+	
+	}	
+
+a:link   
+{   
+ text-decoration:none;
+ color:#5b5a5d;   
+} 
+a:visited {
+		color:#5b5a5d;
+	}  

@@ -1,0 +1,113 @@
+function EsNum(obj,n){//validacion para numeros
+	var checkChr = "0123456789";
+	if (obj.length <= n){ return (false)}
+	var checkStr = obj.value;
+	var allValid = true;
+	for (i = 0; i < checkStr.length; i++){
+		ch = checkStr.charAt(i);
+		for (j = 0; j < checkChr.length; j++)
+			if (ch == checkChr.charAt(j))
+				break;
+		if (j == checkChr.length){
+			allValid = false;
+			break;
+		}
+	}
+	return allValid
+	}
+
+ function guardar(formulario){
+	 
+  retorno=true;
+  
+  msj='Falta completar los siguientes datos:\n\n';  
+  if(formulario.txtaponombres.value=='' || formulario.txtaponombres.value.length<3)
+  	
+  {
+   msj=msj+'- Nombres del Padre de Familia o Apoderado.\n';  
+   retorno=false;
+  }  
+      
+  if(formulario.txtapoapellidos.value=='' || formulario.txtapoapellidos.value.length<8){
+   msj=msj+'- Apellidos del Padre de Familia o Apoderado.\n';  
+   retorno=false;
+  }
+  if(formulario.txtapoemail.value.search(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/ig)){
+   msj=msj+'- Correo Electrónico.\n';  
+   retorno=false;   
+    }
+
+  if(formulario.txtapodistrito.value=='' || formulario.txtapodistrito.value.length<4){
+   msj=msj+'- Distrito.\n';  
+   retorno=false;
+  }
+
+
+  if(formulario.txtapotelefono.value=='' || formulario.txtapotelefono.value.length<7){
+   msj=msj+'- Tel\u00e9fono.\n';  
+   retorno=false;
+  }
+
+
+  if(formulario.txtalunombres.value=='' || formulario.txtalunombres.value.length<3){
+   msj=msj+'- Nombres del Alumno.\n';  
+   retorno=false;
+  }
+  if(formulario.txtaluapellido.value=='' || formulario.txtaluapellido.value.length<4){
+   msj=msj+'- Apellidos del Alumno.\n';  
+   retorno=false;
+  }
+  if(formulario.txtcolproced.value=='' || formulario.txtcolproced.value.length<3){
+   msj=msj+'- Colegio de Procedencia.\n';  
+   retorno=false;
+  }
+
+
+  if(formulario.cmbnivel.value=='0'){
+   msj=msj+'- Nivel.\n';  
+   retorno=false;
+  }
+
+  if(formulario.cmbgrado.value=='0'){
+   msj=msj+'- Grado.\n';  
+   retorno=false;
+  }
+
+  if(formulario.cmbsede.value=='0'){
+   msj=msj+'- Sede.\n';  
+   retorno=false;
+  }
+
+  if(formulario.cmbdireccion.value=='0'){
+   msj=msj+'- Sede Dirección.\n';  
+   retorno=false;
+  }
+
+
+  
+  if(retorno==false) {
+   alert(msj);
+  }
+  
+  if(retorno==true){
+	  
+   			formulario.method="post";
+			formulario.target="_parent";
+			formulario.action="function/functions.php?id=1";
+			
+			formulario.submit();
+			formulario.action="";
+			formulario.target="";
+
+	  }
+  
+ }
+
+function enviar(frmconfirmacion){
+	
+
+   			frmconfirmacion.method="post";
+			frmconfirmacion.target="_parent";
+			frmconfirmacion.action="http://www.pamer.edu.pe/colegios/";			
+			frmconfirmacion.submit();
+	}
